@@ -1,4 +1,5 @@
 FROM ubuntu:trusty
+MAINTAINER Kasyfil Aziz Tri Cahyana <tricahyana@windowslive.com>
 
 RUN apt-get update && apt-get install -y apache2 supervisor openssh-server
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/run/sshd /var/log/supervisor
